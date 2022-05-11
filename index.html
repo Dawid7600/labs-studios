@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Atma&family=Poppins:wght@600&family=Thasadith:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./public/styles.css" />
+	</head>
+	<body class="bg-mainBlue">
+		<header>
+			<div class="py-2 flex justify-center relative">
+				<a class="font-atma text-2xl" href="#">[Lab] Studios</a>
+
+				<nav class="hidden">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+
+				<span class="hidden">+48 546 677 742</span>
+
+				<img
+					class="absolute top-3 right-3 cursor-pointer"
+					src="./icons/hamburger.svg"
+					alt=""
+				/>
+			</div>
+		</header>
+
+		<main>
+			<section>
+				<div class="mt-2 mb-6 relative">
+					<img class="rounded-9xl" src="./images/hero.jpg" alt="" />
+					<div class="absolute top-4 left-6">
+						<h1 class="font-poppins text-2xl">
+							Creative Design <br />
+							for Impressive <br />
+							Buildings.
+						</h1>
+						<h3 class="font-thasadith text-sm pt-1">
+							Allow yourself <br />
+							to live comfortably.
+						</h3>
+						<button
+							class="bg-buttonBlue mt-3 px-3 py-1 rounded-lg flex justify-center items-center gap-x-2"
+						>
+							<p class="text-white">Get Started</p>
+							<img src="./icons/arrow-up-right.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="pb-4">
+					<h2>
+						Our <br />
+						Projects
+					</h2>
+					<figure class="py-1">
+						<img class="w-full" src="./images/project-1.jpg" alt="Project 1" />
+						<figcaption
+							class="font-thasadith text-sm font-bold text-center text-gray"
+						>
+							17 Chenoweth Drive, Cookeville, 38501 Tennessee
+						</figcaption>
+					</figure>
+					<figure class="py-1">
+						<img class="w-full" src="./images/project-2.jpg" alt="Project 2" />
+						<figcaption
+							class="font-thasadith text-sm font-bold text-center text-gray"
+						>
+							2184 Station Street, Richmond, 94801 California
+						</figcaption>
+					</figure>
+					<button
+						class="mx-auto flex justify-center items-center gap-x-2 text-buttonBlue font-thasadith text-sm font-bold"
+					>
+						<p>View All</p>
+						<img src="./icons/arrow-right.svg" alt="" />
+					</button>
+				</div>
+			</section>
+
+			<section>
+				<div class="relative">
+					<h2>
+						Why <br />
+						Should We?
+					</h2>
+					<p class="w-1/2 pl-6 text-center">
+						Don't hesitate to use our architect services to drawyour building
+						design, [Lab] Studios is ready to make your dream building come
+						true. The price of architect services is not exprensive when
+						compared to the costs if you have to dismantle and rebuild your
+						house.
+					</p>
+					<div class="w-5/12 absolute top-10 right-6">
+						<img
+							class="rounded-full pb-4"
+							src="images/house-1-square.jpg"
+							alt=""
+						/>
+						<img class="rounded-full" src="images/house-2-square.jpg" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<!-- Swiperr-->
+
+				<div class="w-1/2 mx-auto py-8 text-center">
+					<img class="mx-auto pb-4" src="./icons/money-bag.svg" alt="" />
+					<h3 class="font-poppins text-xl pb-2">Right budget</h3>
+					<p class="font-thasadith">
+						We make and design according to the recommended and agreed budget
+						from the start.
+					</p>
+				</div>
+			</section>
+
+			<section>
+				<h2>
+					Our <br />
+					Clients Say
+				</h2>
+				<div class="w-1/2 mx-auto text-center pb-4">
+					<img class="pb-2" src="./icons/trustpilot-logo.svg" alt="" />
+					<img class="pb-2 mx-auto" src="./icons/five-stars.svg" alt="" />
+					<h4 class="font-poppins text-xl font-semibold">Excellent</h4>
+					<h5 class="pb-2 font-poppins text-sm font-semibold">
+						Trustpilot 4.9/5
+					</h5>
+					<p class="font-thasadith font-bold">
+						“I have been in the housing sector for 15 years and it was very
+						helpful with the help of the architects from [Lab] Studios, they
+						where able to probide designs that were new and different from the
+						others.”
+					</p>
+				</div>
+
+				<div class="w-11/12 flex justify-end gap-x-2 pt-2">
+					<div class="pb-8">
+						<img
+							class="w-14 h-14 object-cover"
+							src="./images/person-1.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="pt-2">
+						<p class="font-thasadith text-sm">Jacinto Diego</p>
+						<span class="font-poppins text-xs">KeyGo Group </span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-footerGray text-white">
+			<h2>
+				Let's Discuss <br />
+				For a Cool Project!
+			</h2>
+			<button
+				class="bg-buttonBlue ml-8 mb-6 px-3 py-1 rounded-lg flex justify-center items-center gap-x-2"
+			>
+				<p>Consultation Now</p>
+				<img src="./icons/arrow-up-right.svg" alt="" />
+			</button>
+
+			<hr class="w-8/12 mx-auto border-t border-white" />
+
+			<div class="text-center py-4">
+				<a class="font-atma text-2xl block" href="#">[Lab] Studios</a>
+				<p class="font-thasadith text-sm">
+					4295 Maxwell Farm Road <br />
+					Roanoke <br />24011 Virgina
+				</p>
+			</div>
+			<div class="font-thasadith flex justify-around pb-4">
+				<div>
+					<span class="block font-bold pb-4">Features</span>
+					<a href="#" class="block">Services</a>
+					<a href="#" class="block">Portfolio</a>
+					<a href="#" class="block">About Us</a>
+					<a href="#" class="block">Contacts</a>
+				</div>
+
+				<div>
+					<span class="block font-bold pb-4">About</span>
+					<a href="#" class="block">Blog</a>
+					<a href="#" class="block">Pricing</a>
+					<a href="#" class="block">FAQ </a>
+					<a href="#" class="block">Careers</a>
+				</div>
+
+				<div>
+					<span class="block font-bold pb-4">Get In Touch </span>
+					<p>hello@labstudios.com</p>
+					<div class="flex justify-center items-center gap-x-2 py-2">
+						<img src="./icons/instagram.svg" alt="" />
+						<img src="./icons/youtube.svg" alt="" />
+						<img src="./icons/twitter.svg" alt="" />
+						<img src="./icons/facebook.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
