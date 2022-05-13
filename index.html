@@ -11,11 +11,18 @@
 			href="https://fonts.googleapis.com/css2?family=Atma&family=Poppins:wght@600&family=Thasadith:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+
 		<link rel="stylesheet" href="./public/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+		<script src="./main.js" defer></script>
 	</head>
 	<body class="bg-mainBlue">
 		<header>
-			<div class="py-2 flex justify-center relative">
+			<div class="py-2 flex justify-center relative ">
 				<a class="font-atma text-2xl" href="#">[Lab] Studios</a>
 
 				<nav class="hidden">
@@ -99,14 +106,14 @@
 						Why <br />
 						Should We?
 					</h2>
-					<p class="w-1/2 pl-6 text-center">
+					<p class="w-1/2 pl-6 text-center ">
 						Don't hesitate to use our architect services to drawyour building
 						design, [Lab] Studios is ready to make your dream building come
 						true. The price of architect services is not exprensive when
 						compared to the costs if you have to dismantle and rebuild your
 						house.
 					</p>
-					<div class="w-5/12 absolute top-10 right-6">
+					<div class="w-5/12 absolute top-6 right-6">
 						<img
 							class="rounded-full pb-4"
 							src="images/house-1-square.jpg"
@@ -118,16 +125,52 @@
 			</section>
 
 			<section>
-				<!-- Swiperr-->
+				<!-- Swiper START-->
 
-				<div class="w-1/2 mx-auto py-8 text-center">
-					<img class="mx-auto pb-4" src="./icons/money-bag.svg" alt="" />
-					<h3 class="font-poppins text-xl pb-2">Right budget</h3>
-					<p class="font-thasadith">
-						We make and design according to the recommended and agreed budget
-						from the start.
-					</p>
+				<div class="swiper mySwiper ">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="w-1/2 h-full mx-auto py-8 text-center">
+								<img class="mx-auto pb-4" src="./icons/money-bag.svg" alt="" />
+								<h3 class="font-poppins text-xl pb-2">Right budget</h3>
+								<p class="font-thasadith">
+									We make and design according to the recommended and agreed
+									budget from the start.
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="w-1/2 h-full mx-auto py-8 text-center">
+								<img class="mx-auto pb-4" src="./icons/like.svg" alt="" />
+								<h3 class="font-poppins text-xl pb-2">Experienced Personnel</h3>
+								<p class="font-thasadith">
+									We always provide experienced workers in their fields.
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="w-1/2 h-full mx-auto py-8 text-center">
+								<img class="mx-auto pb-4" src="./icons/house.svg" alt="" />
+								<h3 class="font-poppins text-xl pb-2">Clear Legality</h3>
+								<p class="font-thasadith">
+									We are a legal entity with official legality in the relevant government.
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="w-1/2 h-full mx-auto py-8 text-center">
+								<img class="mx-auto pb-4" src="./icons/money.svg" alt="" />
+								<h3 class="font-poppins text-xl pb-2">Affordable Prices</h3>
+								<p class="font-thasadith">
+									Even though the price we provide is cheap, we still provide quality in the building.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
 				</div>
+
+				<!-- Swiper START-->
 			</section>
 
 			<section>
@@ -215,5 +258,6 @@
 				</div>
 			</div>
 		</footer>
+
 	</body>
 </html>
