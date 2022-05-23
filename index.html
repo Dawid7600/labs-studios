@@ -17,16 +17,21 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
-		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+		<script
+			src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+			defer
+		></script>
 		<script src="./main.js" defer></script>
 	</head>
-	<body class="bg-mainBlue">
+	<body class="w-full bg-mainBlue max-w-7xl xl:mx-auto">
 		<header>
-			<div class="py-2 flex justify-center relative ">
-				<a class="font-atma text-2xl" href="#">[Lab] Studios</a>
+			<div
+				class="py-2 flex justify-center relative lg:flex lg:justify-around lg:items-center lg:py-6"
+			>
+				<a class="font-atma text-2xl lg:text-3xl" href="#">[Lab] Studios</a>
 
-				<nav class="hidden">
-					<ul>
+				<nav class="hidden lg:block">
+					<ul class="lg:flex lg:gap-8 lg:text-lg">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="#">Projects</a></li>
@@ -35,34 +40,44 @@
 					</ul>
 				</nav>
 
-				<span class="hidden">+48 546 677 742</span>
-
+				<div class="flex">
+					<img src="./icons/phone.svg" alt="" />
+					<span class="hidden lg:block lg:italic">+48 546 677 742</span>
+				</div>
 				<img
-					class="absolute top-3 right-3 cursor-pointer"
+					class="absolute top-3 right-3 cursor-pointer lg:hidden"
 					src="./icons/hamburger.svg"
 					alt=""
 				/>
 			</div>
 		</header>
 
-		<main>
+		<main class="sm:px-8 md:px-12 lg:px-0">
 			<section>
 				<div class="mt-2 mb-6 relative">
-					<img class="rounded-9xl" src="./images/hero.jpg" alt="" />
-					<div class="absolute top-4 left-6">
-						<h1 class="font-poppins text-2xl">
+					<img
+						class="rounded-9xl lg:rounded-none lg:w-3/5 lg:ml-auto"
+						src="./images/hero.jpg"
+						alt=""
+					/>
+					<div class="absolute top-4 left-6 sm:top-8">
+						<h1
+							class="font-poppins text-2xl sm:text-3xl md:text-4xl md:leading-normal lg:text-7xl lg:py-2 xl:text-8xl"
+						>
 							Creative Design <br />
 							for Impressive <br />
 							Buildings.
 						</h1>
-						<h3 class="font-thasadith text-sm pt-1">
-							Allow yourself <br />
+						<h3
+							class="font-thasadith text-sm pt-1 pl-1 sm:text-base md:text-xl lg:text-2xl lg:py-2 lg:pl-2 xl:text-3xl"
+						>
+							Allow yourself <br class="lg:hidden" />
 							to live comfortably.
 						</h3>
 						<button
-							class="bg-buttonBlue mt-3 px-3 py-1 rounded-lg flex justify-center items-center gap-x-2"
+							class="bg-buttonBlue mt-3 px-3 py-1 rounded-lg flex justify-center items-center gap-x-2 sm:px-5 sm:py-2 lg:px-8 lg:py-3 lg:ml-4 xl:px-12 xl:py-3 hover:bg-blue-800 hover:scale-110 hover:-translate-y-1 duration-300 active:translate-y-1 active:transition"
 						>
-							<p class="text-white">Get Started</p>
+							<p class="text-white lg:text-xl">Get Started</p>
 							<img src="./icons/arrow-up-right.svg" alt="" />
 						</button>
 					</div>
@@ -70,56 +85,78 @@
 			</section>
 
 			<section>
-				<div class="pb-4">
-					<h2>
-						Our <br />
-						Projects
-					</h2>
-					<figure class="py-1">
-						<img class="w-full" src="./images/project-1.jpg" alt="Project 1" />
-						<figcaption
-							class="font-thasadith text-sm font-bold text-center text-gray"
-						>
-							17 Chenoweth Drive, Cookeville, 38501 Tennessee
-						</figcaption>
-					</figure>
-					<figure class="py-1">
-						<img class="w-full" src="./images/project-2.jpg" alt="Project 2" />
-						<figcaption
-							class="font-thasadith text-sm font-bold text-center text-gray"
-						>
-							2184 Station Street, Richmond, 94801 California
-						</figcaption>
-					</figure>
+				<div class="pb-4 lg:flex">
+					<div>
+						<h2>
+							Our <br />
+							Projects
+						</h2>
+					</div>
+					<div class="lg:flex lg:gap-4">
+						<figure class="py-1">
+							<img
+								class="w-full sm:rounded-md lg:rounded-none"
+								src="./images/project-1.jpg"
+								alt="Project 1"
+							/>
+							<figcaption
+								class="font-thasadith text-sm font-bold text-center text-gray"
+							>
+								17 Chenoweth Drive, Cookeville, 38501 Tennessee
+							</figcaption>
+						</figure>
+						<figure class="py-1">
+							<img
+								class="w-full sm:rounded-md lg:rounded-none"
+								src="./images/project-2.jpg"
+								alt="Project 2"
+							/>
+							<figcaption
+								class="font-thasadith text-sm font-bold text-center text-gray"
+							>
+								2184 Station Street, Richmond, 94801 California
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div>
 					<button
-						class="mx-auto flex justify-center items-center gap-x-2 text-buttonBlue font-thasadith text-sm font-bold"
+						class="mx-auto flex justify-center items-center gap-x-2 text-buttonBlue font-thasadith font-bold cursor-pointer hover:scale-110 hover:-translate-y-1 duration-300 active:translate-y-1 active:transition"
 					>
-						<p>View All</p>
+						<p class="lg:text-xl">View All</p>
 						<img src="./icons/arrow-right.svg" alt="" />
 					</button>
 				</div>
 			</section>
 
 			<section>
-				<div class="relative">
-					<h2>
-						Why <br />
-						Should We?
-					</h2>
-					<p class="w-1/2 pl-6 text-center ">
-						Don't hesitate to use our architect services to drawyour building
-						design, [Lab] Studios is ready to make your dream building come
-						true. The price of architect services is not exprensive when
-						compared to the costs if you have to dismantle and rebuild your
-						house.
-					</p>
-					<div class="w-5/12 absolute top-6 right-6">
+				<div class="flex lg:p-6">
+					<div class="w-full lg:order-2">
+						<h2 class="lg:leading-relaxed">
+							Why <br />
+							Should We?
+						</h2>
+						<p
+							class="font-thasadith px-4 text-center sm:pt-4 sm:px-8 lg:text-left lg:text-xl xl:text-2xl"
+						>
+							Don't hesitate to use our architect services to drawyour building
+							design, [Lab] Studios is ready to make your dream building come
+							true. The price of architect services is not exprensive when
+							compared to the costs if you have to dismantle and rebuild your
+							house.
+						</p>
+					</div>
+					<div class="mt-10 px-1 w-full sm:w-1/2 sm:mt-4 lg:w-full lg:mt-0">
 						<img
-							class="rounded-full pb-4"
+							class="rounded-full pb-4 lg:rounded-none lg:pb-0"
 							src="images/house-1-square.jpg"
 							alt=""
 						/>
-						<img class="rounded-full" src="images/house-2-square.jpg" alt="" />
+						<img
+							class="rounded-full md:hidden"
+							src="images/house-2-square.jpg"
+							alt=""
+						/>
 					</div>
 				</div>
 			</section>
@@ -127,13 +164,15 @@
 			<section>
 				<!-- Swiper START-->
 
-				<div class="swiper mySwiper ">
+				<div class="swiper mySwiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="w-1/2 h-full mx-auto py-8 text-center">
 								<img class="mx-auto pb-4" src="./icons/money-bag.svg" alt="" />
-								<h3 class="font-poppins text-xl pb-2">Right budget</h3>
-								<p class="font-thasadith">
+								<h3 class="font-poppins text-xl pb-2 xl:text-2xl">
+									Right budget
+								</h3>
+								<p class="font-thasadith xl:text-lg">
 									We make and design according to the recommended and agreed
 									budget from the start.
 								</p>
@@ -142,8 +181,10 @@
 						<div class="swiper-slide">
 							<div class="w-1/2 h-full mx-auto py-8 text-center">
 								<img class="mx-auto pb-4" src="./icons/like.svg" alt="" />
-								<h3 class="font-poppins text-xl pb-2">Experienced Personnel</h3>
-								<p class="font-thasadith">
+								<h3 class="font-poppins text-xl pb-2 xl:text-2xl">
+									Experienced Personnel
+								</h3>
+								<p class="font-thasadith xl:text-lg">
 									We always provide experienced workers in their fields.
 								</p>
 							</div>
@@ -151,18 +192,24 @@
 						<div class="swiper-slide">
 							<div class="w-1/2 h-full mx-auto py-8 text-center">
 								<img class="mx-auto pb-4" src="./icons/house.svg" alt="" />
-								<h3 class="font-poppins text-xl pb-2">Clear Legality</h3>
-								<p class="font-thasadith">
-									We are a legal entity with official legality in the relevant government.
+								<h3 class="font-poppins text-xl pb-2 xl:text-2xl">
+									Clear Legality
+								</h3>
+								<p class="font-thasadith xl:text-lg">
+									We are a legal entity with official legality in the relevant
+									government.
 								</p>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="w-1/2 h-full mx-auto py-8 text-center">
 								<img class="mx-auto pb-4" src="./icons/money.svg" alt="" />
-								<h3 class="font-poppins text-xl pb-2">Affordable Prices</h3>
-								<p class="font-thasadith">
-									Even though the price we provide is cheap, we still provide quality in the building.
+								<h3 class="font-poppins text-xl pb-2 xl:text-2xl">
+									Affordable Prices
+								</h3>
+								<p class="font-thasadith xl:text-lg">
+									Even though the price we provide is cheap, we still provide
+									quality in the building.
 								</p>
 							</div>
 						</div>
@@ -174,90 +221,122 @@
 			</section>
 
 			<section>
-				<h2>
-					Our <br />
-					Clients Say
-				</h2>
-				<div class="w-1/2 mx-auto text-center pb-4">
-					<img class="pb-2" src="./icons/trustpilot-logo.svg" alt="" />
-					<img class="pb-2 mx-auto" src="./icons/five-stars.svg" alt="" />
-					<h4 class="font-poppins text-xl font-semibold">Excellent</h4>
-					<h5 class="pb-2 font-poppins text-sm font-semibold">
-						Trustpilot 4.9/5
-					</h5>
-					<p class="font-thasadith font-bold">
-						“I have been in the housing sector for 15 years and it was very
-						helpful with the help of the architects from [Lab] Studios, they
-						where able to probide designs that were new and different from the
-						others.”
-					</p>
-				</div>
-
-				<div class="w-11/12 flex justify-end gap-x-2 pt-2">
-					<div class="pb-8">
-						<img
-							class="w-14 h-14 object-cover"
-							src="./images/person-1.jpg"
-							alt=""
-						/>
+				<div class="lg:ml-8 lg:my-8 lg:flex lg:gap-x-6">
+					<div class="lg:w-full">
+						<h2 class="lg:leading-relaxed">
+							Our <br />
+							Clients Say
+						</h2>
+						<div
+							class="w-1/2 mx-auto text-center pb-4 lg:text-left lg:m-0 lg:w-full xl:pt-10"
+						>
+							<img
+								class="pb-2 lg:hidden"
+								src="./icons/trustpilot-logo.svg"
+								alt=""
+							/>
+							<div class="lg:flex lg:gap-x-4 lg:pb-3">
+								<div>
+									<h4 class="font-poppins text-xl font-semibold">Excellent</h4>
+								</div>
+								<div>
+									<img
+										class="pb-2 mx-auto"
+										src="./icons/five-stars.svg"
+										alt=""
+									/>
+									<h5 class="pb-2 font-poppins text-sm font-semibold">
+										Trustpilot 4.9/5
+									</h5>
+								</div>
+							</div>
+							<p class="text-gray font-thasadith font-bold lg:text-xl">
+								“I have been in the housing sector for 15 years and it was very
+								helpful with the help of the architects from [Lab] Studios, they
+								where able to probide designs that were new and different from
+								the others.”
+							</p>
+						</div>
+						<div
+							class="w-11/12 flex justify-end gap-x-2 pt-2 lg:justify-start xl:pt-4"
+						>
+							<div class="pb-8">
+								<img
+									class="w-14 h-14 object-cover"
+									src="./images/person-1.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="pt-2 lg:pt-1">
+								<p class="font-thasadith text-sm lg:text-lg">Jacinto Diego</p>
+								<span class="font-poppins text-xs lg:text-base"
+									>KeyGo Group
+								</span>
+							</div>
+						</div>
 					</div>
-					<div class="pt-2">
-						<p class="font-thasadith text-sm">Jacinto Diego</p>
-						<span class="font-poppins text-xs">KeyGo Group </span>
+
+					<div class="hidden lg:block lg:w-full">
+						<img src="./images/house-2-square.jpg" alt="" />
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="bg-footerGray text-white">
-			<h2>
-				Let's Discuss <br />
-				For a Cool Project!
-			</h2>
-			<button
-				class="bg-buttonBlue ml-8 mb-6 px-3 py-1 rounded-lg flex justify-center items-center gap-x-2"
-			>
-				<p>Consultation Now</p>
-				<img src="./icons/arrow-up-right.svg" alt="" />
-			</button>
-
-			<hr class="w-8/12 mx-auto border-t border-white" />
-
-			<div class="text-center py-4">
-				<a class="font-atma text-2xl block" href="#">[Lab] Studios</a>
-				<p class="font-thasadith text-sm">
-					4295 Maxwell Farm Road <br />
-					Roanoke <br />24011 Virgina
-				</p>
+		<footer
+			class="bg-footerGray text-white sm:mx-8 sm:rounded-md sm:mb-2 md:mx-12 lg:mb-0 lg:mx-0 lg:rounded-none"
+		>
+			<div class="lg:flex lg:items-center lg:pl-10">
+				<h2 class="w-3/4 lg:leading-relaxed lg:text-7xl">
+					Let's Discuss <br />
+					For a Cool Project!
+				</h2>
+				<button
+					class="h-full bg-buttonBlue ml-8 mb-6 px-3 py-1 rounded-lg flex justify-center items-center gap-x-2 hover:bg-blue-800 hover:scale-110 hover:-translate-y-1 duration-300 active:translate-y-1 active:transition lg:px-5 lg:py-3 xl:px-12 xl:py-3"
+				>
+					<p>Consultation Now</p>
+					<img src="./icons/arrow-up-right.svg" alt="" />
+				</button>
 			</div>
-			<div class="font-thasadith flex justify-around pb-4">
-				<div>
-					<span class="block font-bold pb-4">Features</span>
-					<a href="#" class="block">Services</a>
-					<a href="#" class="block">Portfolio</a>
-					<a href="#" class="block">About Us</a>
-					<a href="#" class="block">Contacts</a>
-				</div>
 
-				<div>
-					<span class="block font-bold pb-4">About</span>
-					<a href="#" class="block">Blog</a>
-					<a href="#" class="block">Pricing</a>
-					<a href="#" class="block">FAQ </a>
-					<a href="#" class="block">Careers</a>
-				</div>
+			<hr class="w-8/12 mx-auto border-t border-white lg:w-10/12" />
 
-				<div>
-					<span class="block font-bold pb-4">Get In Touch </span>
-					<p>hello@labstudios.com</p>
-					<div class="flex justify-center items-center gap-x-2 py-2">
-						<img src="./icons/instagram.svg" alt="" />
-						<img src="./icons/youtube.svg" alt="" />
-						<img src="./icons/twitter.svg" alt="" />
-						<img src="./icons/facebook.svg" alt="" />
+			<div class="w-full lg:flex lg:justify-around">
+				<div class="text-center py-4">
+					<a class="font-atma text-2xl block lg:text-3xl" href="#">[Lab] Studios</a>
+					<p class="font-thasadith text-sm lg:text-base">
+						4295 Maxwell Farm Road <br />
+						Roanoke <br />24011 Virgina
+					</p>
+				</div>
+				<div class="w-full font-thasadith flex justify-around py-4 lg:w-7/12">
+					<div>
+						<span class="block font-bold pb-4">Features</span>
+						<a href="#" class="block">Services</a>
+						<a href="#" class="block">Portfolio</a>
+						<a href="#" class="block">About Us</a>
+						<a href="#" class="block">Contacts</a>
+					</div>
+
+					<div>
+						<span class="block font-bold pb-4">About</span>
+						<a href="#" class="block">Blog</a>
+						<a href="#" class="block">Pricing</a>
+						<a href="#" class="block">FAQ </a>
+						<a href="#" class="block">Careers</a>
+					</div>
+
+					<div>
+						<span class="block font-bold pb-4">Get In Touch </span>
+						<p>hello@labstudios.com</p>
+						<ul class="flex justify-center items-center gap-x-2 py-2">
+							<li class="cursor-pointer hover:scale-110 hover:-translate-y-1 duration-300 active:translate-y-1 active:transition"><img src="./icons/instagram.svg" alt="" /></li>
+							<li class="cursor-pointer hover:scale-110 hover:-translate-y-1 duration-300 active:translate-y-1 active:transition"><img src="./icons/youtube.svg" alt="" /></li>
+							<li class="cursor-pointer hover:scale-110 hover:-translate-y-1 duration-300 active:translate-y-1 active:transition"><img src="./icons/twitter.svg" alt="" /></li>
+							<li class="cursor-pointer hover:scale-110 hover:-translate-y-1 duration-300 active:translate-y-1 active:transition"><img src="./icons/facebook.svg" alt="" /></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
-
 	</body>
 </html>

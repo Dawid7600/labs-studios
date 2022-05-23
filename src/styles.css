@@ -9,3 +9,18 @@ h2 {
 	line-height: 2rem;
 	padding: 1rem 1.5rem;
 }
+
+
+@media screen and (min-width: 640px) {
+	h2 {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	h2 {
+		font-size: 3rem;
+		line-height: 1;
+	}
+}
